@@ -3,102 +3,104 @@ package projects.distributed.happypatients.springboot.model;
 import java.util.Date;
 
 public class TreatmentInformation {
-    private String patientId;
-    private TreatmentStatus treatmentStatus;
-    private String doctorName;
-    private String report;
-    private String diagnosis;
-    private Date startDate;
-    private Date endDate;
-    private String medicalCondition;
 
-    public TreatmentInformation() {
+	private String patientId;
+	private TreatmentStatus treatmentStatus;
+	private String doctorName;
+	private String report;
+	private String diagnosis;
+	private Date startDate;
+	private Date endDate;
+	private String medicalCondition;
 
-    }
+	public TreatmentInformation() {
 
-    public TreatmentInformation(TreatmentInformation treatmentInformation) {
-        this.patientId = treatmentInformation.patientId;
-        this.treatmentStatus = treatmentInformation.treatmentStatus;
-        this.doctorName = treatmentInformation.doctorName;
-        this.report = treatmentInformation.report;
-        this.diagnosis = treatmentInformation.diagnosis;
-        this.startDate = treatmentInformation.startDate;
-        this.endDate = treatmentInformation.endDate;
-        this.medicalCondition = treatmentInformation.medicalCondition;
-    }
+	}
 
-    public TreatmentInformation(String patientId, TreatmentStatus treatmentStatus, String doctorName, String report, String diagnosis, Date startDate, Date endDate, String medicalCondition) {
-        this.patientId = patientId;
-        this.treatmentStatus = treatmentStatus;
-        this.doctorName = doctorName;
-        this.report = report;
-        this.diagnosis = diagnosis;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.medicalCondition = medicalCondition;
-    }
+	public TreatmentInformation(TreatmentInformation treatmentInformation) {
+		this.patientId = treatmentInformation.patientId;
+		this.treatmentStatus = treatmentInformation.treatmentStatus;
+		this.doctorName = treatmentInformation.doctorName;
+		this.report = treatmentInformation.report;
+		this.diagnosis = treatmentInformation.diagnosis;
+		this.startDate = treatmentInformation.startDate;
+		this.endDate = treatmentInformation.endDate;
+		this.medicalCondition = treatmentInformation.medicalCondition;
+	}
 
-    public String getPatientId() {
-        return patientId;
-    }
+	public TreatmentInformation(String patientId, TreatmentStatus treatmentStatus, String doctorName, String report,
+			String diagnosis, Date startDate, Date endDate, String medicalCondition) {
+		this.patientId = patientId;
+		this.treatmentStatus = treatmentStatus;
+		this.doctorName = doctorName;
+		this.report = report;
+		this.diagnosis = diagnosis;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.medicalCondition = medicalCondition;
+	}
 
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
-    }
+	public String getPatientId() {
+		return patientId;
+	}
 
-    public TreatmentStatus getTreatmentStatus() {
-        return treatmentStatus;
-    }
+	public void setPatientId(String patientId) {
+		this.patientId = patientId;
+	}
 
-    public void setTreatmentStatus(TreatmentStatus treatmentStatus) {
-        this.treatmentStatus = treatmentStatus;
-    }
+	public TreatmentStatus getTreatmentStatus() {
+		return treatmentStatus;
+	}
 
-    public String getDoctorName() {
-        return doctorName;
-    }
+	public void setTreatmentStatus(TreatmentStatus treatmentStatus) {
+		this.treatmentStatus = treatmentStatus;
+	}
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
-    }
+	public String getDoctorName() {
+		return doctorName;
+	}
 
-    public String getReport() {
-        return report;
-    }
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
+	}
 
-    public void setReport(String report) {
-        this.report = report;
-    }
+	public String getReport() {
+		return report;
+	}
 
-    public String getDiagnosis() {
-        return diagnosis;
-    }
+	public void setReport(String report) {
+		this.report = report;
+	}
 
-    public void setDiagnosis(String diagnosis) {
-        this.diagnosis = diagnosis;
-    }
+	public String getDiagnosis() {
+		return diagnosis;
+	}
 
-    public Date getStartDate() {
-        return startDate;
-    }
+	public void setDiagnosis(String diagnosis) {
+		this.diagnosis = diagnosis;
+	}
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
+	public Date getStartDate() {
+		return startDate;
+	}
 
-    public Date getEndDate() {
-        return endDate;
-    }
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+	public Date getEndDate() {
+		return endDate;
+	}
 
-    public String getMedicalCondition() {
-        return medicalCondition;
-    }
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
 
-    public void setMedicalCondition(String medicalCondition) {
-        this.medicalCondition = medicalCondition;
-    }
+	public String getMedicalCondition() {
+		return medicalCondition;
+	}
+
+	public void setMedicalCondition(String medicalCondition) {
+		this.medicalCondition = medicalCondition;
+	}
 }
